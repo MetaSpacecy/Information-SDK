@@ -1,0 +1,27 @@
+{
+  "name": "@metaspacecy/information-sdk",
+  "version": "1.0.0",
+  "description": "Metaspacecy Information SDK",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MetaSpacecy/Information-SDK.git"
+  },
+  "homepage": "https://github.com/MetaSpacecy",
+  "bugs": {
+    "url": "https://github.com/MetaSpacecy/Information-SDK/issues"
+  },
+  "author": "Bekh-nam <bekhnam2021@gmail.com>, ctdarius <space.sea1611@gmail.com>, toan.vo24122000 <space.vtoan@gmail.com>",
+  "keywords": [
+    "Metaspacecy",
+    "Information",
+    "EVM",
+    "Move"
+  ]
+}

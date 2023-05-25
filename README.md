@@ -27,6 +27,18 @@ yarn install @metaspacecy/information-sdk
 ```
 
 ## Quickstart
+Integrate InformationSDK in EVM ecosystem.
+
+```bash
+import { MetaspacecySDK, Network } from "metspacecy-evm-sdk";
+import { ethers } from "ethers";
+
+const provider = new ethers.providers.JsonRpcProvider(
+  "<https://<network>.alchemyapi.io/v2/YOUR-API-KEY">
+);
+
+const metaspacecySdk = new MetaspacecySDK(provider, Network.bnbTestnet);
+```
 
 Integrate InformationSDK in Move ecosystem.
 

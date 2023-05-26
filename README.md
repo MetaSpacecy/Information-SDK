@@ -30,14 +30,12 @@ yarn install @metaspacecy/information-sdk
 Integrate InformationSDK in EVM ecosystem.
 
 ```bash
-import { MetaspacecySDK, Network } from "metspacecy-evm-sdk";
+import { InformationSDK, Network } from "@metaspacecy/information-sdk/evm";
 import { ethers } from "ethers";
 
-const provider = new ethers.providers.JsonRpcProvider(
-  "<https://<network>.alchemyapi.io/v2/YOUR-API-KEY">
-);
+const provider = new ethers.providers.Web3Provider(window.ethereum);
 
-const metaspacecySdk = new MetaspacecySDK(provider, Network.bnbTestnet);
+const informationSDK = new InformationSDK(provider, Network.bnbTestnet);
 ```
 
 Integrate InformationSDK in Move ecosystem.
@@ -50,8 +48,11 @@ import InformationSDK from "@metaspacecy/information-sdk/move";
 // ChainID of the network used by the user
 // The third parameter takes an array of values that the user wants to return after using the signAndSubmitTransaction function
 // expamle ["hash"] => result {hash: ...}
-const informationSDk = new InformationSDK(signAndSubmitTransaction, chainID, ["hash"]);
+const informationSDK = new InformationSDK(signAndSubmitTransaction, chainID, ["hash"]);
 ```
+
+## Developer Docs and Demo
+To get insight Metaspacecy Information SDK please checkout [Information SDK][doc-url]
 
 ## Semantic versioning
 
@@ -80,3 +81,4 @@ To release a new version of the SDK do the following.
 [npm-image-version]: https://img.shields.io/npm/v/pnpm.svg
 [npm-image-downloads]: https://img.shields.io/npm/dm/aptos.svg
 [npm-url]: https://github.com/MetaSpacecy/Information-SDK
+[doc-url]: https://docs.metaspacecy.com/doc/metaspacecy-sdk/information-sdk

@@ -6,7 +6,7 @@
 
 </br>
 <div align="center">
-  <img src="./assets/images/icon.png" alt="MetaSpacecy logo"/>
+  <img with="400px" src="./assets/images/logo.png" alt="MetaSpacecy logo"/>
 </div>
 </br>
 
@@ -23,7 +23,7 @@ npm install @metaspacecy/information-sdk
 Use the package manager _[yarn](https://yarnpkg.com/getting-started/install)_ to install package.
 
 ```bash
-yarn install @metaspacecy/information-sdk
+yarn @metaspacecy/information-sdk
 ```
 
 ## Quickstart
